@@ -24,6 +24,8 @@
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Accordion?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Click me">
@@ -112,9 +114,29 @@
     </Spinner>
 
     <ColorPicker GridPane.rowIndex="3" GridPane.columnIndex="0"/>
-
     <DatePicker GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
+    <Accordion GridPane.rowIndex="3" GridPane.columnIndex="2" GridPane.columnSpan="2"
+            expandedPane="$tp3">
+        <panes>
+            <TitledPane text="This is a titled pane!!!">
+                <Label text="Label 1 in titled pane"/>
+            </TitledPane>
+
+            <TitledPane text="This is a titled pane!!!">
+                <Label text="Label 2 in titled pane"/>
+            </TitledPane>
+
+            <TitledPane fx:id="tp3" text="This is a titled pane!!!">
+                <Label text="Label 3 in titled pane"/>
+            </TitledPane>
+        </panes>
+    </Accordion>
+
+
+    <Button GridPane.rowIndex="4" GridPane.columnIndex="0" text="Say Hello">
+
+    </Button>
 </GridPane>
 
 <!--<?import javafx.geometry.Insets?>-->
