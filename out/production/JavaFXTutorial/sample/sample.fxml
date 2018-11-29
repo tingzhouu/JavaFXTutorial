@@ -133,10 +133,12 @@
         </panes>
     </Accordion>
 
+    <TextField fx:id="nameField" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
 
-    <Button GridPane.rowIndex="4" GridPane.columnIndex="0" text="Say Hello">
-        
-    </Button>
+    <Button GridPane.rowIndex="5" GridPane.columnIndex="0" text="Say Hello"
+        onAction="#onButtonClicked"/>
+
+
 </GridPane>
 
 <!--<?import javafx.geometry.Insets?>-->
