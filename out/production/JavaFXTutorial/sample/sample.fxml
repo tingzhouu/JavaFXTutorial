@@ -142,7 +142,9 @@
     <Button fx:id="byeButton" GridPane.rowIndex="5" GridPane.columnIndex="1" text="Say Bye"
         onAction="#onButtonClicked"/>
 
-
+    <CheckBox fx:id="clearTextCheckBox" text="Clear the field after saying hello or bye" GridPane.rowIndex="6"
+              GridPane.columnIndex="0" GridPane.columnSpan="2"
+              onAction="#handleChange"/>
 </GridPane>
 
 <!--<?import javafx.geometry.Insets?>-->
