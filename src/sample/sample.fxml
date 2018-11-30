@@ -133,11 +133,14 @@
         </panes>
     </Accordion>
 
-    <TextField fx:id="nameField" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="nameField" GridPane.rowIndex="4" GridPane.columnIndex="0"
+        onKeyReleased="#handleKeyReleased"/>
 
-    <Button GridPane.rowIndex="5" GridPane.columnIndex="0" text="Say Hello"
+    <Button fx:id="helloButton" GridPane.rowIndex="5" GridPane.columnIndex="0" text="Say Hello"
         onAction="#onButtonClicked"/>
 
+    <Button fx:id="byeButton" GridPane.rowIndex="5" GridPane.columnIndex="1" text="Say Bye"
+        onAction="#onButtonClicked"/>
 
 </GridPane>
 
