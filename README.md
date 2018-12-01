@@ -9,6 +9,8 @@ This repository serves to document my learning on JavaFX, to learn how to create
 
 **Event Handlers:** onAction, onKeyReleased
 
+**Concurrency Features:** Platform.runLater
+
 ## Getting Started
 
 To be filled in - on how anyone can open the application.
@@ -16,6 +18,7 @@ To be filled in - on how anyone can open the application.
 ## Built With
 
 Java SDK 1.8
+
 IntelliJ IDEA CE
 
 ## Contributing
